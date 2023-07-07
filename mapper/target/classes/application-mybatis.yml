@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: rootroot
+    url: jdbc:mysql://192.168.80.1:3306/penghao?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+
+mybatis:
+  type-aliases-package: site.penghao.bean
+  mapper-locations: classpath:mybatis/*.xml

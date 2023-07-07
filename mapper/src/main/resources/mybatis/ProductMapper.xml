@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设定命名空间，即此 mapper 配置文件对应的 Mapper 类 -->
+<mapper namespace="site.penghao.mapper.ProductMapper">
+
+    <!-- 映射类名下方的方法名，根据 id -->
+    <!-- 标签名表示此方法映射的数据库操作类型，此外还有 select、update、delete 等标签可选 -->
+    <insert id="insertProduct" parameterType="site.penghao.bean.Product" useGeneratedKeys="true" keyProperty="id">
+        insert into product(name, price) value(#{name}, #{price})
+    </insert>
+</mapper>

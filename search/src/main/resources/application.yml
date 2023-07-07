@@ -1,0 +1,6 @@
+spring:
+  data:
+    solr:
+      host: http://192.168.80.130:8983/solr
+server:
+  port: 8090
